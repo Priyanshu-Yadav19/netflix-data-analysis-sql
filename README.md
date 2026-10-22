@@ -74,4 +74,77 @@ The project explores 20 analytical questions, including:
 
 ## Project Structure
 
+```text
+Netflix-Data-Analysis-Insights-Analytics/
+├── Data/
+│   ├── NetflixUTF.csv
+│   └── Questions.txt
+├── screenshots/
+│   ├── categorize_movie_duration.png
+│   ├── movie_director_analysis.png
+│   ├── movie_ranking_by_release_year.png
+│   ├── record_count.png
+│   └── running_total_analysis.png
+├── Netflix Data Analysis & Insights Analytics - SQL Project.sql
+├── netflix_analysis.sql
+└── README.md
+```
+
+## Setup and Execution
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Priyanshu-Yadav19/netflix-data-analysis-sql.git
+cd netflix-data-analysis-sql
+```
+
+### 2. Create the database
+
+Open MySQL Workbench and execute:
+
+```sql
+CREATE DATABASE IF NOT EXISTS netflix_db;
+USE netflix_db;
+```
+
+### 3. Import the dataset
+
+Import `Data/NetflixUTF.csv` into MySQL Workbench and create a table named `netflixutf`.
+
+Ensure the imported columns and data types match the dataset. The CSV file uses semicolons (`;`) as delimiters.
+
+### 4. Run the SQL scripts
+
+Open the SQL scripts in MySQL Workbench and execute the queries after confirming that the `netflixutf` table has been imported successfully.
+
+## Screenshots
+
+The `screenshots/` folder contains examples of query results and analysis, including:
+
+- Data exploration and record counts
+- Movie duration categorization
+- Director analysis
+- Movie ranking by release year
+- Running-total analysis
+
+## Project Highlights
+
+- Explores Netflix movies and TV shows using SQL.
+- Examines ratings, genres, countries, and release-year trends.
+- Includes data quality checks and missing-value analysis.
+- Demonstrates advanced SQL techniques, including CTEs and window functions.
+- Uses query results to investigate meaningful questions about the content catalog.
+
+## Author
+
+**Priyanshu Yadav**
+
+SQL | MySQL | Data Analysis
+
+Repository: [netflix-data-analysis-sql](https://github.com/Priyanshu-Yadav19/netflix-data-analysis-sql)
+
+## Acknowledgment
+
+The original SQL project and analysis materials were sourced from an existing project. Any reused material remains subject to its applicable license and attribution requirements.
 
